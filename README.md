@@ -20,7 +20,7 @@ NOTE: The image generator's pipeline is configured to best operate on my NVIDIA 
 - Python / Flask
 - LangChain for LLM integration
 - Stable Diffusion for image generation
-- Pyngrok for tunneling
+- Pyngrok for tunneling (https://dashboard.ngrok.com/endpoints)
 - ReportLab for PDF generation
 
 ## Getting Started

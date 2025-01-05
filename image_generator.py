@@ -12,7 +12,7 @@ logger = logging.getLogger()
 # This config may look different for different GPUs.
 pipe = AutoPipelineForText2Image.from_pretrained('lykon/dreamshaper-xl-lightning', torch_dtype=torch.float32)
 pipe.scheduler = DPMSolverMultistepScheduler.from_config(pipe.scheduler.config)
-# Options to consider for performance:
+# Options to consider for performance: https://huggingface.co/docs/diffusers/en/optimization/memory
 pipe.enable_sequential_cpu_offload()
 pipe.enable_xformers_memory_efficient_attention()
 # pipe.enable_model_cpu_offload()
