@@ -41,7 +41,7 @@ def generate_sync(prompts: list[str], negative_prompts: list[str]) -> Tuple[list
     # Save the file in /images
     file_paths: list[str] = []
     for image in images:
-        # convert image to black and white
+        # Convert image to black and white with a threshold so we get a cleanly outlined image without shading that will be easy to color in.
         threshold = 100
         fn = lambda x : 255 if x > threshold else 0
         image = image.convert('L').point(fn, mode='1')
