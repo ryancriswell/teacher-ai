@@ -1,8 +1,10 @@
 # Teacher AI - Worksheet Generator
 
-A web application that generates customized educational worksheets for kindergarten teachers using AI. 
+A web application that generates customized educational worksheets for kindergarten teachers using AI.
 
 The system combines Large Language Models (LLMs) and image generation models to create fully personalizable materials to enhance student engagement and learning.
+
+NOTE: The image generator's pipeline is configured to best operate on my NVIDIA 1660 SUPER which has a very specific issue with float16 operations. As a result, much of the load is pushed to the CPU and it takes me ~40 seconds per image x 9 images. If using a different GPU, the pipeline configuration in the code should be altered to maximize VRAM usage which would greatly improve generation speeds.
 
 ## Features
 
