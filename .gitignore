@@ -1,0 +1,6 @@
+__pycache__/
+
+worksheet/generated_sheets/*
+worksheet/images/*
+
+.env
