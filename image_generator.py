@@ -1,8 +1,8 @@
 import time, os, asyncio
 
-from diffusers import AutoPipelineForText2Image, DPMSolverMultistepScheduler, DiffusionPipeline
+from diffusers import AutoPipelineForText2Image, DPMSolverMultistepScheduler
 from PIL.Image import Image
-from typing import overload, Tuple
+from typing import Tuple
 
 import torch
 import logging
